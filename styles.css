@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Geo:ital@0;1&display=swap');
+
+:root {
+    --highlight: #FFFFFF;
+    --icon: #64FF64;
+    --bar: #0A1621;
+    --dark: #132534;
+    --light: #172C3E;
+    --dot-size: .5rem;
+    --hover: #FFEEE2;
+    --background: linear-gradient(transparent 50%, var(--dark) 50%), linear-gradient(90deg, var(--dark) 50%, var(--light) 50%);
+}
+
+body {
+    background-image: var(--background);
+    background-size: var(--dot-size) var(--dot-size);
+    font-family: "Geo", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Audiowide", sans-serif
+}
+
+h1, p,th,td {
+    color: var(--highlight);
+}
+
+a {
+    color: var(--icon);
+    text-decoration: none;
+}
+a:hover {
+    color: var(--hover);
+}
+.text_box {
+    border: solid 1px var(--highlight);
+    width:fit-content;
+    padding: 18px;
+    background-color: var(--bar);
+    border-radius: 28px;
+    corner-shape: bevel;
+}
+table {
+    border: solid 1px var(--highlight);padding: 3px;background-color: var(--bar);
+}
