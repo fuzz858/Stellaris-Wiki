@@ -21,8 +21,14 @@ h1, h2, h3, h4, h5, h6 {
     font-family: "Audiowide", sans-serif
 }
 
-h1, p,th,td {
+h1, p {
     color: var(--highlight);
+}
+th,td {
+color: var(--highlight);
+border-bottom: 1px solid;
+border-side: 1px solid;
+padding: 3px;
 }
 
 a {
