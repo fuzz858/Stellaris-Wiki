@@ -46,6 +46,88 @@ a:hover {
     border-radius: 28px;
     corner-shape: bevel;
 }
+.title_box {
+    border: solid 1px var(--highlight);
+    padding: 3px;
+    background-color: var(--bar);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+
+}
 table {
     border: solid 1px var(--highlight);padding: 3px;background-color: var(--bar);
+}
+.menu-btn {
+    padding: 10px 15px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 1px;
+
+}
+
+#vertical-menu {
+    height: 100%; /* Full-height navigation */
+    width: 200px; /* Set the width of the navigation */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: var(--bar); /* Black background color */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in/out */
+    border-right: solid 0.5px var(--highlight);
+}
+
+#vertical-menu a {
+    padding: 10px 5px 5px 10px;
+    text-decoration: none;
+    font-size: 17px;
+    color: var(--icon);
+    display: block; /* Make the links appear as blocks */
+    transition: 0.3s;
+}
+
+#vertical-menu a:hover {
+    color: var(--hover);
+}
+
+/* Class to hide the menu initially and toggle its visibility */
+.menu-hidden {
+    width: 0 !important; /* Hides the menu */
+}
+
+#main-content {
+    transition: margin-left .5s; /* Smooth transition for the content push */
+    padding: 0px;
+    margin-left: 0; /* Initial margin */
+}
+.hover-image {
+  opacity: 0; /* Initially hidden */
+  position: relative;
+  top: 0.25;
+  left: 0.5;
+}
+.image-wrapper:hover .hover-image {
+  opacity: 1; /* Becomes visible on hover */
+  top: 1;
+  left: 0.5;
+}
+
+.image-wrapper:hover .default-image {
+  opacity: 0; /* Default image hides on hover */
+}
+.default-image {
+    position: absolute;
+    x-index: 1;
+}
+.image-wrapper{
+
+}
+.image-wrapper img {
+  position: center;
+  align-items: center;
 }
