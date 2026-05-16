@@ -5,7 +5,6 @@
     <title>Stellaris 3.0-3.14.15926</title>
     <link rel="icon" href="C:\Users\gamer\OneDrive\Desktop\Website images\stellaris Wiki Icon3.png" type="image/png">
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
 </head>
 <body>
 <div id="main-content">
@@ -14,25 +13,42 @@
     <h1>Stellaris 3.0-3.14.15926</h1>
     <div id="vertical-menu" class="menu-hidden">
         <div class="image-wrapper">
-            <a href="Stellaris%20Mini%20Wiki%20main%20page.html">
-                <img class="default-image" src="C:\Users\gamer\OneDrive\Desktop\Website images\Stellaris wiki icon 2.1.png" width="70" height="70">
-                <img class="hover-image" src="C:\Users\gamer\OneDrive\Desktop\Website images\Stellaris wiki icon 2.2.png" width="70" height="70">
-            </a>
+            <img id="homepageShip">
         </div>
-        <a href="HTML%20page%202.html" class=" my-button">updates list</a>
+        <a href="Stellaris%20Mini%20Wiki%20main%20page.html" class=" my-button">Home</a>
+        <a href="Features%20over%20the%20years.html" class=" my-button">Features over the years</a>
+        <a href="Updates.html" class=" my-button">updates list</a>
         <a href="HTML%20Stellaris%201.0.html" class=" my-button">Stellaris update 1.0-1.9.1</a>
         <a href="HTML%20Stellaris%202.0.html" class=" my-button">Stellaris update 2.0-2.8.1</a>
         <a href="HTML%20Stellaris%203.0.html" class=" my-button">Stellaris update 3.0-3.14.15926</a>
         <a href="HTML%20Stellaris%204.0.html" class=" my-button">Stellaris update 4.0-Newest Version</a>
         <a href="DLC%20list.html" class="my-button">DLC list</a>
-        <a href="https://stellaris.paradoxwikis.com/Patches">This is where most info for this website was found</a>
+        <a href="Beginner's%20Guide%20to%20stellaris.html">Beginner's guide to stellaris</a>
+        <a href="Bibliography.html">Bibliography</a>
     </div>
 </div>
+    <audio autoplay>
+  <source src="C:\Users\gamer\OneDrive\Desktop\01_stellarissuite_creationandbeyond.mp3" type="audio/mpeg">
+</audio>
 <br>
 <div class="text_box">
     <p>DLC added: Nemesis, Aquatics Species Pack, Overlord, Toxoids, First Contact, Galactic Paragons, Astral Planes, The Machine Age, Cosmic Storms, Grand Archive.</p>
-    <p>Features added: </p>
-    <P>
+    <br>
+    <h2>Major changes: </h2>
+    <p>Patch 3.14 implemented a limit on the number of habitats AI empires can construct. This was a critical change to improve late-game performance,
+        as the excessive number of habitats in previous versions was a major hardware strain on the CPU.</p>
+    <p>Patch 3.14 introduced major engine optimizations to how ship modifiers and pop jobs are calculated.
+        This reduced CPU wait times and improved late-game performance compared to earlier 3.x versions.</p>
+    <p>Storage required increased from around 10 GB to 12+ GB due to the addition of multiple DLCs and free updates.</p>
+    <p>Optimization of memory allocations within the alert manager and UI lowered RAM usage during heavy gameplay.</p>
+    <br>
+    <h2>Why:</h2>
+    <p>Stellaris developers optimized memory allocations within the alert manager between the 3.0 and 3.14 updates primarily to reduce CPU overhead,
+        improve framerates, and mitigate late-game stuttering</p>
+    <br>
+    <h2>In depth list of features added/changed:</h2>
+
+    <p>
         <br>
         <br>
         <br>
@@ -84,8 +100,9 @@
         <br>
         <br>
 
-    </P>
+    </p>
 </div>
 </div>
+<script src="script.js"></script>
 </body>
 </html>

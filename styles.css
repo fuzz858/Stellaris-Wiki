@@ -17,11 +17,18 @@ body {
     font-family: "Geo", sans-serif;
 }
 
+li {
+    color: var(--highlight);
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: "Audiowide", sans-serif
 }
+.note{
 
-h1, p, img {
+}
+
+h1, h2, p, img {
     color: var(--highlight);
 }
 th,td {
@@ -69,16 +76,16 @@ table {
 }
 
 #vertical-menu {
-    height: 100%; /* Full-height navigation */
-    width: 200px; /* Set the width of the navigation */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
     top: 0;
     left: 0;
-    background-color: var(--bar); /* Black background color */
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 20px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in/out */
+    background-color: var(--bar);
+    overflow-x: hidden;
+    padding-top: 20px;
+    transition: 0.5s;
     border-right: solid 0.5px var(--highlight);
 }
 
@@ -105,13 +112,27 @@ table {
     padding: 0px;
     margin-left: 0; /* Initial margin */
 }
-.hover-image {
+.hover-image1, .hover-image2, .hover-image3 {
   opacity: 0; /* Initially hidden */
   position: relative;
   top: 0.25;
   left: 0.5;
 }
-.image-wrapper:hover .hover-image {
+.image-wrapper:hover .hover-image1 {
+  opacity: 1; /* Becomes visible on hover */
+  top: 1;
+  left: 0.5;
+}
+
+.image-wrapper:hover .hover-image2 {
+transition-delay: 1s;
+  opacity: 1; /* Becomes visible on hover */
+  top: 1;
+  left: 0.5;
+}
+
+.image-wrapper:hover .hover-image3 {
+transition-delay: 2s;
   opacity: 1; /* Becomes visible on hover */
   top: 1;
   left: 0.5;

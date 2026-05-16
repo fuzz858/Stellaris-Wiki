@@ -5,7 +5,6 @@
     <title>Stellaris 2.0-2.8.1</title>
     <link rel="icon" href="C:\Users\gamer\OneDrive\Desktop\Website images\stellaris Wiki Icon3.png" type="image/png">
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
 </head>
 <body>
 <div id="main-content">
@@ -14,25 +13,44 @@
     <h1>Stellaris 2.0-2.8.1</h1>
     <div id="vertical-menu" class="menu-hidden">
         <div class="image-wrapper">
-            <a href="Stellaris%20Mini%20Wiki%20main%20page.html">
-                <img class="default-image" src="C:\Users\gamer\OneDrive\Desktop\Website images\Stellaris wiki icon 2.1.png" width="70" height="70">
-                <img class="hover-image" src="C:\Users\gamer\OneDrive\Desktop\Website images\Stellaris wiki icon 2.2.png" width="70" height="70">
-            </a>
+            <img id="homepageShip">
         </div>
-        <a href="HTML%20page%202.html" class=" my-button">updates list</a>
+        <a href="Stellaris%20Mini%20Wiki%20main%20page.html" class=" my-button">Home</a>
+        <a href="Features%20over%20the%20years.html" class=" my-button">Features over the years</a>
+        <a href="Updates.html" class=" my-button">updates list</a>
         <a href="HTML%20Stellaris%201.0.html" class=" my-button">Stellaris update 1.0-1.9.1</a>
         <a href="HTML%20Stellaris%202.0.html" class=" my-button">Stellaris update 2.0-2.8.1</a>
         <a href="HTML%20Stellaris%203.0.html" class=" my-button">Stellaris update 3.0-3.14.15926</a>
         <a href="HTML%20Stellaris%204.0.html" class=" my-button">Stellaris update 4.0-Newest Version</a>
         <a href="DLC%20list.html" class="my-button">DLC list</a>
-        <a href="https://stellaris.paradoxwikis.com/Patches">This is where most info for this website was found</a>
+        <a href="Beginner's%20Guide%20to%20stellaris.html">Beginner's guide to stellaris</a>
+        <a href="Bibliography.html">Bibliography</a>
     </div>
 </div>
+    <audio autoplay>
+  <source src="C:\Users\gamer\OneDrive\Desktop\01_stellarissuite_creationandbeyond.mp3" type="audio/mpeg">
+</audio>
 <br>
 <div class="text_box">
     <p>DLC added: Apocalypse, Distant Stars, MegaCorp, Ancient Relics, Lithoids, Federations, Necroids.</p>
-    <p>Features added: </p>
-    <P>
+    <br>
+    <h2>Major changes: </h2>
+    <p>Between Stellaris version 2.0 and version 2.8, the primary hardware changes were not required physical ones,
+        instead it changed how the software utilized that hardware, shifting from a single-threaded bottleneck to better multicore optimization to combat late-game lag. </p>
+    <p>While optimization helped, the primary way the game maintained playable speeds for older CPUs between updates 2.0 and 2.8 was through updates that reduced total pop growth in the galaxy, reducing the load on the CPU.</p>
+    <p>The transition to 64-bit allowed the game to handle significantly more data, improving performance for massive galaxies, particularly in the late game where 2.3 was 10-30% faster than previous versions.</p>
+    <p>The update 2.0 ("Cherryh") changed massive parts of the game that indirectly increased the hardware demands on the CPU and memory,
+        update 2.0 solidified Stellaris as a CPU-heavy game that struggled with lag during massive late-game fleet battles, pathfinding, and population calculations.</p>
+    <p>Late-game performance in 2.8 was improved by optimizing "tick times" and implementing more efficient parallelization, meaning the game was better at spreading the load across multiple CPU cores rather than relying solely on one.</p>
+    <br>
+    <h2>Why:</h2>
+    <p>The transition from Stellaris 2.0 to 2.8.1 (and beyond) involved significant changes to hardware utilization
+        primarily to address severe late-game performance issues caused by the "Le Guin" (2.2) update,
+        which replaced the tile system with a complex, pop-heavy economic simulation. </p>
+    <br>
+    <h2>In depth list of features added/changed:</h2>
+
+    <p>
         <br>
         <br>
         <br>
@@ -84,8 +102,9 @@
         <br>
         <br>
 
-    </P>
+    </p>
 </div>
 </div>
+<script src="script.js"></script>
 </body>
 </html>
