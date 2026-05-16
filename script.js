@@ -29,21 +29,29 @@ ship.alt = "Click to Go to homepage"
 ship.src = "homepageShip/Base.png"
 // sets the data so we have less to put on each page
 ship.addEventListener("mouseenter", function() {
+    let animationNum = String(parseInt((sessionStorage.getItem("shipNum") || 0)) + 1)
+    sessionStorage.setItem("shipNum", animationNum)
+    sessionStorage.setItem("shipStatus", "true")
     // when the mouse hovers over the ship
     ship.src = "homepageShip/Flying-One.png"
     // changes ship image
     setTimeout(function() {
         // setTimeout(function() {}, 1000) waits 1 second
-        ship.src = "homepageShip/Flying-Two.png"
-        setTimeout(function() {
-            ship.src = "homepageShip/Flying-Three.png"
-        }, 1000)
+        if ((sessionStorage.getItem("shipNum") === animationNum) && sessionStorage.getItem("shipStatus")) {
+            ship.src = "homepageShip/Flying-Two.png"
+            setTimeout(function() {
+            if ((sessionStorage.getItem("shipNum") === animationNum) && sessionStorage.getItem("shipStatus")) {
+                ship.src = "homepageShip/Flying-Three.png"
+            }
+            }, 1000)
+        }
     }, 1000)
 })
 
 ship.addEventListener("mouseleave", function() {
     // when the mouse is no longer hovering over the ship
     ship.src = "homepageShip/Base.png"
+    sessionStorage.setItem("shipStatus", "")
 })
 
 ship.addEventListener("click", function() {
