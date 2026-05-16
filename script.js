@@ -23,6 +23,7 @@ function id(name) {
 
 // Ship Image
 
+
 let ship = document.getElementById("homepageShip")
 // gets the blank ship element
 ship.alt = "Click to Go to homepage"
